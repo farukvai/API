@@ -8,5 +8,25 @@
 </head>
 <body>
     <h1>javaScript Object Notation</h1>
+
+    <script>
+        const user = {id:12,
+            name:"faruk",
+            class:23,
+            gfList:['Prachi Sima', 'Faria Khan', 'Tamanna Akter', 'Kona'],
+            moderGF:{
+                faceColor:"OffWhite",
+                height:5.4,
+                weight:"55KG",
+            }
+        }
+        
+        const userJSON = JSON.stringify(user);
+        console.log(userJSON);
+
+        const userData = JSON.parse(userJSON);
+        console.log(userData);
+    </script>
+
 </body>
 </html>
